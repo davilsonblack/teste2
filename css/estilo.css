@@ -146,14 +146,15 @@ body .container .bloco-maior .block-maior .bloco-maior-title {
 }
 
 @media (max-width: 1220px) {
-  * {
-    border: 2px solid red;
-  }
-
   body > .container {
     width: 650px;
     flex-wrap: wrap;
     height: 100%;
+  }
+}
+@media (max-width: 605px) {
+  body > .container > .bloco-maior {
+    height: 450px;
   }
 }
 

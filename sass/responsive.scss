@@ -1,12 +1,15 @@
 @media (max-width: 1220px){
+   
     body > .container{
         width: 650px;
         flex-wrap: wrap;
         height: 100%;
-
-        .bloco{
-            
-        }
-        
     }
+}
+@media (max-width: 605px){
+   
+        body > .container > .bloco-maior{
+            height: 450px;
+        }
+    
 }
