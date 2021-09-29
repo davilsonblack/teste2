@@ -15,12 +15,12 @@ body {
   background-color: var(--background);
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
 }
 body .container {
   width: 1200px;
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
   justify-content: center;
@@ -31,6 +31,7 @@ body .container .bloco {
   min-height: 230px;
   border-radius: 12px;
   margin: 15px;
+  width: 270px;
   display: flex;
   justify-content: flex-end;
 }
@@ -142,6 +143,18 @@ body .container .bloco-maior .block-maior .bloco-maior-title {
   --green: #4BCF83;
   --purple: #7235D1;
   --yellow: #F1C75B;
+}
+
+@media (max-width: 1220px) {
+  * {
+    border: 2px solid red;
+  }
+
+  body > .container {
+    width: 650px;
+    flex-wrap: wrap;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
